@@ -50,7 +50,6 @@ class Solution {
                 st.push(stoi(token));
             }
         }
-        
         // After processing all tokens, stack should have exactly one value
         if (st.size() != 1) {
             throw runtime_error("Invalid postfix expression");
