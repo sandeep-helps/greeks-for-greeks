@@ -39,13 +39,11 @@ class Solution {
             curr = nextNode;
             reversed++;
         }
-        
         // Step 3: Recursively reverse remaining nodes
         if(curr != NULL){
             head->next = reverseKGroup(curr, k);
         }
         // If curr is NULL, head->next should point to NULL (already NULL)
-        
         return prevNode;
     }
 };
